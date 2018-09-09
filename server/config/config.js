@@ -16,6 +16,14 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 
 let urlDB;
 
+/**
+ * NOTAS
+ * Para crear las variables desde el CLI de Heroku
+ *  heroku config:set MONGO_URI="XXXXXXX" -> Crea la variable
+    heroku config:get nombre -> Obtiene la variable creada
+    heroku config:unset nombre -> Borra la variable
+ */
+
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe'
 } else {
