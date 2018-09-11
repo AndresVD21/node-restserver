@@ -11,8 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
 app.use(bodyParser.json())
-const routes = require('./routes/usuario.routes');
-app.use(routes);
+app.use(require('./routes/index.routes'));
 
 app.get('/', (req, res) => {
     res.json('Hello World');
