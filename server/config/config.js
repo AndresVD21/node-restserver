@@ -47,3 +47,9 @@ process.env.EXP_TOKEN = 60 * 60 * 24 * 30;
  */
 
 process.env.SEED =  process.env.SEED || 'secret'
+
+/**
+ * Google Client ID
+ */
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '379863195537-cfstdhkbhsk29t3i3p2n1p6p012aqttk.apps.googleusercontent.com'
